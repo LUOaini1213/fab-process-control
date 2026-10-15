@@ -1,0 +1,834 @@
+{
+  "boot_seed": 7,
+  "cal": {
+    "fails": 9,
+    "n": 235
+  },
+  "far_target": 0.05,
+  "gb_chosen": {
+    "learning_rate": 0.1,
+    "max_iter": 100,
+    "max_leaf_nodes": 7
+  },
+  "gb_fixed": {
+    "class_weight": "balanced",
+    "early_stopping": false,
+    "l2_regularization": 1.0,
+    "min_samples_leaf": 20,
+    "random_state": 0
+  },
+  "gb_selection": [
+    {
+      "cal_pr_auc": 0.4142389655,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "max_leaf_nodes": 7
+    },
+    {
+      "cal_pr_auc": 0.3896651101,
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "max_leaf_nodes": 7
+    },
+    {
+      "cal_pr_auc": 0.323677741,
+      "learning_rate": 0.05,
+      "max_iter": 100,
+      "max_leaf_nodes": 15
+    },
+    {
+      "cal_pr_auc": 0.3343364614,
+      "learning_rate": 0.05,
+      "max_iter": 200,
+      "max_leaf_nodes": 15
+    },
+    {
+      "cal_pr_auc": 0.4695510959,
+      "learning_rate": 0.1,
+      "max_iter": 100,
+      "max_leaf_nodes": 7
+    },
+    {
+      "cal_pr_auc": 0.3847581855,
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 7
+    },
+    {
+      "cal_pr_auc": 0.2558867229,
+      "learning_rate": 0.1,
+      "max_iter": 100,
+      "max_leaf_nodes": 15
+    },
+    {
+      "cal_pr_auc": 0.2701175654,
+      "learning_rate": 0.1,
+      "max_iter": 200,
+      "max_leaf_nodes": 15
+    }
+  ],
+  "limit_quantile": 0.99,
+  "lr_c_grid": [
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0
+  ],
+  "lr_c_selection": [
+    {
+      "C": 1e-06,
+      "cal_pr_auc": 0.08925156503
+    },
+    {
+      "C": 1e-05,
+      "cal_pr_auc": 0.09196256621
+    },
+    {
+      "C": 0.0001,
+      "cal_pr_auc": 0.09207280164
+    },
+    {
+      "C": 0.001,
+      "cal_pr_auc": 0.08518837249
+    },
+    {
+      "C": 0.01,
+      "cal_pr_auc": 0.04823589622
+    },
+    {
+      "C": 0.1,
+      "cal_pr_auc": 0.0415665412
+    },
+    {
+      "C": 1.0,
+      "cal_pr_auc": 0.04306775699
+    }
+  ],
+  "methods": [
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 27,
+      "method": "PCA T2 (70% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06164035684,
+        "null_p95": 0.09759209717,
+        "observed": 0.06217970484,
+        "p": 0.3668165917
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5010444025,
+        "null_p95": 0.5969848901,
+        "observed": 0.5735576923,
+        "p": 0.1084457771
+      },
+      "pr_auc": {
+        "hi": 0.09100908168,
+        "lo": 0.04970801944,
+        "n_boot": 2000,
+        "point": 0.06217970484
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.0,
+      "roc_auc": {
+        "hi": 0.6728777473,
+        "lo": 0.4712070742,
+        "n_boot": 2000,
+        "point": 0.5735576923
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07307692308,
+        "lo": 0.03269230769,
+        "n_boot": 2000,
+        "point": 0.05192307692
+      },
+      "threshold": 110.1323211,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 29,
+      "method": "PCA SPE (70% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06182731204,
+        "null_p95": 0.09716033481,
+        "observed": 0.05514336089,
+        "p": 0.5682158921
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5013962569,
+        "null_p95": 0.5971256868,
+        "observed": 0.4980082418,
+        "p": 0.5272363818
+      },
+      "pr_auc": {
+        "hi": 0.08823360042,
+        "lo": 0.04259879648,
+        "n_boot": 2000,
+        "point": 0.05514336089
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.25,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.1071428571
+      },
+      "recall_at_test_far_oracle": 0.0,
+      "roc_auc": {
+        "hi": 0.6131936813,
+        "lo": 0.3810851648,
+        "n_boot": 2000,
+        "point": 0.4980082418
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07692307692,
+        "lo": 0.03653846154,
+        "n_boot": 2000,
+        "point": 0.05576923077
+      },
+      "threshold": 527.7353221,
+      "tp": 3
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 27,
+      "method": "PCA T2/SPE combined (70% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06180623111,
+        "null_p95": 0.09724773688,
+        "observed": 0.05431503184,
+        "p": 0.5892053973
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.501273283,
+        "null_p95": 0.597603022,
+        "observed": 0.5011675824,
+        "p": 0.5002498751
+      },
+      "pr_auc": {
+        "hi": 0.08461408179,
+        "lo": 0.04277349882,
+        "n_boot": 2000,
+        "point": 0.05431503184
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.0,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.0
+      },
+      "recall_at_test_far_oracle": 0.0,
+      "roc_auc": {
+        "hi": 0.6125171703,
+        "lo": 0.3854326923,
+        "n_boot": 2000,
+        "point": 0.5011675824
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07115384615,
+        "lo": 0.03461538462,
+        "n_boot": 2000,
+        "point": 0.05192307692
+      },
+      "threshold": 0.9165828039,
+      "tp": 0
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 28,
+      "method": "PCA T2 (80% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06155959739,
+        "null_p95": 0.09684984763,
+        "observed": 0.0579120489,
+        "p": 0.4687656172
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5008427885,
+        "null_p95": 0.5963667582,
+        "observed": 0.5320741758,
+        "p": 0.2948525737
+      },
+      "pr_auc": {
+        "hi": 0.09138286546,
+        "lo": 0.04539362592,
+        "n_boot": 2000,
+        "point": 0.0579120489
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1785714286,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.07142857143
+      },
+      "recall_at_test_far_oracle": 0.07142857143,
+      "roc_auc": {
+        "hi": 0.6288513049,
+        "lo": 0.4249948489,
+        "n_boot": 2000,
+        "point": 0.5320741758
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.075,
+        "lo": 0.03461538462,
+        "n_boot": 2000,
+        "point": 0.05384615385
+      },
+      "threshold": 195.8367014,
+      "tp": 2
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 29,
+      "method": "PCA SPE (80% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06180663965,
+        "null_p95": 0.09763361926,
+        "observed": 0.05533875002,
+        "p": 0.5527236382
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5013959821,
+        "null_p95": 0.5962396978,
+        "observed": 0.5065934066,
+        "p": 0.4542728636
+      },
+      "pr_auc": {
+        "hi": 0.08674069298,
+        "lo": 0.04379842181,
+        "n_boot": 2000,
+        "point": 0.05533875002
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.03571428571,
+      "roc_auc": {
+        "hi": 0.6210233516,
+        "lo": 0.3852317995,
+        "n_boot": 2000,
+        "point": 0.5065934066
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07692307692,
+        "lo": 0.03653846154,
+        "n_boot": 2000,
+        "point": 0.05576923077
+      },
+      "threshold": 381.3325794,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 30,
+      "method": "PCA T2/SPE combined (80% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06179591522,
+        "null_p95": 0.09849420116,
+        "observed": 0.05537244046,
+        "p": 0.5522238881
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5013031937,
+        "null_p95": 0.5975309066,
+        "observed": 0.5046703297,
+        "p": 0.4667666167
+      },
+      "pr_auc": {
+        "hi": 0.08704170632,
+        "lo": 0.04355693406,
+        "n_boot": 2000,
+        "point": 0.05537244046
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.0,
+      "roc_auc": {
+        "hi": 0.6191723901,
+        "lo": 0.3843853022,
+        "n_boot": 2000,
+        "point": 0.5046703297
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07884615385,
+        "lo": 0.03846153846,
+        "n_boot": 2000,
+        "point": 0.05769230769
+      },
+      "threshold": 0.8234931526,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 31,
+      "method": "PCA T2 (90% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06163488996,
+        "null_p95": 0.09692470878,
+        "observed": 0.05315548261,
+        "p": 0.636181909
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5009112981,
+        "null_p95": 0.597393544,
+        "observed": 0.4697802198,
+        "p": 0.7101449275
+      },
+      "pr_auc": {
+        "hi": 0.09084209249,
+        "lo": 0.04064474008,
+        "n_boot": 2000,
+        "point": 0.05315548261
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1785714286,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.07142857143
+      },
+      "recall_at_test_far_oracle": 0.07142857143,
+      "roc_auc": {
+        "hi": 0.5791912775,
+        "lo": 0.3574089973,
+        "n_boot": 2000,
+        "point": 0.4697802198
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.08076923077,
+        "lo": 0.03846153846,
+        "n_boot": 2000,
+        "point": 0.05961538462
+      },
+      "threshold": 294.8843312,
+      "tp": 2
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 31,
+      "method": "PCA SPE (90% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.0617992273,
+        "null_p95": 0.09765673576,
+        "observed": 0.06210061038,
+        "p": 0.3588205897
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5015915865,
+        "null_p95": 0.5918509615,
+        "observed": 0.5535027473,
+        "p": 0.1814092954
+      },
+      "pr_auc": {
+        "hi": 0.0945401371,
+        "lo": 0.0486185099,
+        "n_boot": 2000,
+        "point": 0.06210061038
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.03571428571,
+      "roc_auc": {
+        "hi": 0.6665848214,
+        "lo": 0.4310353709,
+        "n_boot": 2000,
+        "point": 0.5535027473
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.08076923077,
+        "lo": 0.04038461538,
+        "n_boot": 2000,
+        "point": 0.05961538462
+      },
+      "threshold": 264.1405045,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 30,
+      "method": "PCA T2/SPE combined (90% var)",
+      "perm_pr_auc": {
+        "null_mean": 0.06180907088,
+        "null_p95": 0.09712617687,
+        "observed": 0.06652187263,
+        "p": 0.2788605697
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5015859203,
+        "null_p95": 0.5947870879,
+        "observed": 0.5698489011,
+        "p": 0.1144427786
+      },
+      "pr_auc": {
+        "hi": 0.104193483,
+        "lo": 0.05046055913,
+        "n_boot": 2000,
+        "point": 0.06652187263
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.03571428571,
+      "roc_auc": {
+        "hi": 0.687029533,
+        "lo": 0.4485559753,
+        "n_boot": 2000,
+        "point": 0.5698489011
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.07884615385,
+        "lo": 0.03846153846,
+        "n_boot": 2000,
+        "point": 0.05769230769
+      },
+      "threshold": 0.8500606872,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.03539823009,
+      "fp": 11,
+      "method": "Count of sensors beyond 3 sigma",
+      "perm_pr_auc": {
+        "null_mean": 0.05981798781,
+        "null_p95": 0.08981937029,
+        "observed": 0.0684848565,
+        "p": 0.1954022989
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5008896463,
+        "null_p95": 0.595209478,
+        "observed": 0.5718063187,
+        "p": 0.1064467766
+      },
+      "pr_auc": {
+        "hi": 0.1297196472,
+        "lo": 0.0502477879,
+        "n_boot": 2000,
+        "point": 0.0684848565
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1785714286,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.07142857143
+      },
+      "recall_at_test_far_oracle": 0.07142857143,
+      "roc_auc": {
+        "hi": 0.6716371909,
+        "lo": 0.4619557005,
+        "n_boot": 2000,
+        "point": 0.5718063187
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.03461538462,
+        "lo": 0.009615384615,
+        "n_boot": 2000,
+        "point": 0.02115384615
+      },
+      "threshold": 15.0,
+      "tp": 2
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 9,
+      "method": "Best single sensor (S059)",
+      "perm_pr_auc": {
+        "null_mean": 0.06163848248,
+        "null_p95": 0.09363260233,
+        "observed": 0.06351180662,
+        "p": 0.3328335832
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5016629121,
+        "null_p95": 0.5942479396,
+        "observed": 0.4957074176,
+        "p": 0.5492253873
+      },
+      "pr_auc": {
+        "hi": 0.1415599618,
+        "lo": 0.04286639027,
+        "n_boot": 2000,
+        "point": 0.06351180662
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1071428571,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.03571428571
+      },
+      "recall_at_test_far_oracle": 0.03571428571,
+      "roc_auc": {
+        "hi": 0.6117582418,
+        "lo": 0.3822098214,
+        "n_boot": 2000,
+        "point": 0.4957074176
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.02884615385,
+        "lo": 0.005769230769,
+        "n_boot": 2000,
+        "point": 0.01730769231
+      },
+      "threshold": 5.9155,
+      "tp": 1
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 72,
+      "method": "Logistic regression (L2, C=0.0001)",
+      "perm_pr_auc": {
+        "null_mean": 0.06159545251,
+        "null_p95": 0.09524760009,
+        "observed": 0.05599331215,
+        "p": 0.5427286357
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5007379464,
+        "null_p95": 0.5951236264,
+        "observed": 0.5625686813,
+        "p": 0.1474262869
+      },
+      "pr_auc": {
+        "hi": 0.07804090605,
+        "lo": 0.0488241541,
+        "n_boot": 2000,
+        "point": 0.05599331215
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.2142857143,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.1071428571
+      },
+      "recall_at_test_far_oracle": 0.0,
+      "roc_auc": {
+        "hi": 0.6406644918,
+        "lo": 0.4836521291,
+        "n_boot": 2000,
+        "point": 0.5625686813
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.1711538462,
+        "lo": 0.1115384615,
+        "n_boot": 2000,
+        "point": 0.1384615385
+      },
+      "threshold": 0.04254005382,
+      "tp": 3
+    },
+    {
+      "cal_far_at_cal_threshold": 0.04867256637,
+      "fp": 37,
+      "method": "Gradient boosting (HistGB, lr=0.1, leaves=7, iter=100)",
+      "perm_pr_auc": {
+        "null_mean": 0.06133942794,
+        "null_p95": 0.09415961948,
+        "observed": 0.08992123988,
+        "p": 0.06796601699
+      },
+      "perm_roc_auc": {
+        "null_mean": 0.5017097871,
+        "null_p95": 0.5947149725,
+        "observed": 0.645260989,
+        "p": 0.005997001499
+      },
+      "pr_auc": {
+        "hi": 0.1699200163,
+        "lo": 0.06373314833,
+        "n_boot": 2000,
+        "point": 0.08992123988
+      },
+      "recall_at_cal_threshold": {
+        "hi": 0.1785714286,
+        "lo": 0.0,
+        "n_boot": 2000,
+        "point": 0.07142857143
+      },
+      "recall_at_test_far_oracle": 0.07142857143,
+      "roc_auc": {
+        "hi": 0.7493320742,
+        "lo": 0.5374072802,
+        "n_boot": 2000,
+        "point": 0.645260989
+      },
+      "test_far_at_cal_threshold": {
+        "hi": 0.09423076923,
+        "lo": 0.05,
+        "n_boot": 2000,
+        "point": 0.07115384615
+      },
+      "threshold": 0.1414968989,
+      "tp": 2
+    }
+  ],
+  "n_boot": 2000,
+  "n_perm": 2000,
+  "n_reference_rows": 717,
+  "n_sensors_kept": 408,
+  "pca": {
+    "70": {
+      "explained": 0.7002646924,
+      "limits": {
+        "n_cal_pass": 226,
+        "n_ref": 717,
+        "spe": {
+          "empirical": 652.7713432,
+          "empirical_boot_hi": 17148.44425,
+          "empirical_boot_lo": 623.3907553,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.0,
+            "test_pass": 0.04038461538
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.7566371681,
+            "ref_pass": 0.09483960948,
+            "test_pass": 0.8711538462
+          },
+          "theoretical": 167.1221083,
+          "theoretical_name": "Jackson-Mudholkar"
+        },
+        "t2": {
+          "empirical": 229.0406976,
+          "empirical_boot_hi": 2829.070845,
+          "empirical_boot_lo": 118.6718907,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.02231520223,
+            "test_pass": 0.025
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.0796460177,
+            "ref_pass": 0.07112970711,
+            "test_pass": 0.07884615385
+          },
+          "theoretical": 85.0818199,
+          "theoretical_name": "Phase II F limit (NIST 6.5.4.3.4)"
+        }
+      },
+      "n_components": 51,
+      "spe_ucl99": 652.7713432,
+      "t2_ucl99": 229.0406976
+    },
+    "80": {
+      "explained": 0.8037406481,
+      "limits": {
+        "n_cal_pass": 226,
+        "n_ref": 717,
+        "spe": {
+          "empirical": 471.1344111,
+          "empirical_boot_hi": 13603.49752,
+          "empirical_boot_lo": 436.1388427,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.0,
+            "test_pass": 0.04807692308
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.8628318584,
+            "ref_pass": 0.05857740586,
+            "test_pass": 0.975
+          },
+          "theoretical": 109.9576682,
+          "theoretical_name": "Jackson-Mudholkar"
+        },
+        "t2": {
+          "empirical": 324.9480408,
+          "empirical_boot_hi": 4744.646094,
+          "empirical_boot_lo": 211.587768,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.01952580195,
+            "test_pass": 0.03076923077
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.1017699115,
+            "ref_pass": 0.07252440725,
+            "test_pass": 0.09423076923
+          },
+          "theoretical": 118.7417544,
+          "theoretical_name": "Phase II F limit (NIST 6.5.4.3.4)"
+        }
+      },
+      "n_components": 73,
+      "spe_ucl99": 471.1344111,
+      "t2_ucl99": 324.9480408
+    },
+    "90": {
+      "explained": 0.9011189707,
+      "limits": {
+        "n_cal_pass": 226,
+        "n_ref": 717,
+        "spe": {
+          "empirical": 317.8101049,
+          "empirical_boot_hi": 8168.237025,
+          "empirical_boot_lo": 295.212225,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.0,
+            "test_pass": 0.03846153846
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.9601769912,
+            "ref_pass": 0.0460251046,
+            "test_pass": 0.9923076923
+          },
+          "theoretical": 56.88631819,
+          "theoretical_name": "Jackson-Mudholkar"
+        },
+        "t2": {
+          "empirical": 493.9358163,
+          "empirical_boot_hi": 9483.632084,
+          "empirical_boot_lo": 326.6283921,
+          "exceed_empirical": {
+            "cal_pass": 0.01327433628,
+            "ref_pass": 0.01255230126,
+            "test_pass": 0.03269230769
+          },
+          "exceed_theoretical": {
+            "cal_pass": 0.1371681416,
+            "ref_pass": 0.06276150628,
+            "test_pass": 0.1442307692
+          },
+          "theoretical": 176.2120521,
+          "theoretical_name": "Phase II F limit (NIST 6.5.4.3.4)"
+        }
+      },
+      "n_components": 108,
+      "spe_ucl99": 317.8101049,
+      "t2_ucl99": 493.9358163
+    }
+  },
+  "perm_seed": 11,
+  "random_ranking_pr_auc": {
+    "expected_exact": 0.06130282498,
+    "simulated_mean": 0.06184400009,
+    "simulated_p95": 0.09821421665,
+    "source": "Bestgen (2015), PBML 103; simulated with the permutation seed"
+  },
+  "test": {
+    "fails": 28,
+    "n": 548,
+    "prevalence": 0.05109489051
+  }
+}

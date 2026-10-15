@@ -1,0 +1,115 @@
+{
+  "k": 0.5,
+  "n_rep": 20000,
+  "rows": [
+    {
+      "h": 4.0,
+      "k": 0.5,
+      "nist_one_sided": 336.0,
+      "one_sided": {
+        "arl": 335.19085,
+        "median_rl": 233.0,
+        "se": 2.329314311,
+        "seed": 71
+      },
+      "shift_sigma": 0.0,
+      "two_sided": {
+        "arl": 167.2271,
+        "median_rl": 117.0,
+        "se": 1.145863132,
+        "seed": 1071
+      }
+    },
+    {
+      "h": 4.0,
+      "k": 0.5,
+      "nist_one_sided": 26.6,
+      "one_sided": {
+        "arl": 26.45715,
+        "median_rl": 20.0,
+        "se": 0.1527695163,
+        "seed": 121
+      },
+      "shift_sigma": 0.5,
+      "two_sided": {
+        "arl": 26.5996,
+        "median_rl": 20.0,
+        "se": 0.1527309737,
+        "seed": 1121
+      }
+    },
+    {
+      "h": 4.0,
+      "k": 0.5,
+      "nist_one_sided": 8.38,
+      "one_sided": {
+        "arl": 8.34235,
+        "median_rl": 7.0,
+        "se": 0.03320056382,
+        "seed": 171
+      },
+      "shift_sigma": 1.0,
+      "two_sided": {
+        "arl": 8.393,
+        "median_rl": 7.0,
+        "se": 0.03375477032,
+        "seed": 1171
+      }
+    },
+    {
+      "h": 5.0,
+      "k": 0.5,
+      "nist_one_sided": 930.0,
+      "one_sided": {
+        "arl": 922.40665,
+        "median_rl": 633.0,
+        "se": 6.534674815,
+        "seed": 81
+      },
+      "shift_sigma": 0.0,
+      "two_sided": {
+        "arl": 465.1352,
+        "median_rl": 325.0,
+        "se": 3.229215749,
+        "seed": 1081
+      }
+    },
+    {
+      "h": 5.0,
+      "k": 0.5,
+      "nist_one_sided": 30.0,
+      "one_sided": {
+        "arl": 37.6151,
+        "median_rl": 29.0,
+        "se": 0.2171848431,
+        "seed": 131
+      },
+      "shift_sigma": 0.5,
+      "two_sided": {
+        "arl": 38.10755,
+        "median_rl": 29.0,
+        "se": 0.2198335632,
+        "seed": 1131
+      }
+    },
+    {
+      "h": 5.0,
+      "k": 0.5,
+      "nist_one_sided": 10.4,
+      "one_sided": {
+        "arl": 10.37215,
+        "median_rl": 9.0,
+        "se": 0.03895611117,
+        "seed": 181
+      },
+      "shift_sigma": 1.0,
+      "two_sided": {
+        "arl": 10.33135,
+        "median_rl": 9.0,
+        "se": 0.03815528338,
+        "seed": 1181
+      }
+    }
+  ],
+  "source": "NIST/SEMATECH e-Handbook 6.3.2.3.1 (pmc3231), ARL table for k = 0.5"
+}

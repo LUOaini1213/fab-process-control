@@ -1,0 +1,75 @@
+{
+  "by_month": {
+    "2008-07": {
+      "fail_rate": 0.2222222222,
+      "fails": 14,
+      "n": 63
+    },
+    "2008-08": {
+      "fail_rate": 0.09189189189,
+      "fails": 51,
+      "n": 555
+    },
+    "2008-09": {
+      "fail_rate": 0.02881355932,
+      "fails": 17,
+      "n": 590
+    },
+    "2008-10": {
+      "fail_rate": 0.06128133705,
+      "fails": 22,
+      "n": 359
+    }
+  },
+  "fail_rate": 0.06636885769,
+  "max_gap_hours": 48.63333333,
+  "median_gap_hours": 0.6166666667,
+  "missing_frac_hist": {
+    "(0,0.05]": 486,
+    "(0.05,0.2]": 20,
+    "(0.2,0.5]": 4,
+    "(0.5,1]": 28,
+    "0": 52
+  },
+  "missing_overall_frac": 0.04537548809,
+  "n_duplicate_timestamps": 33,
+  "n_fail": 104,
+  "n_features_listed_by_uci": 591,
+  "n_pass": 1463,
+  "n_rows": 1567,
+  "n_sensors_in_file": 590,
+  "note_feature_count": "The UCI page and secom.names say 591 features ('a 1567 x 591 matrix'); every row of secom.data has 590 fields. The discrepancy is in the source's own documentation.",
+  "rows_with_any_missing": 1567,
+  "sensors_constant": 116,
+  "sensors_missing_gt_20pct": 32,
+  "sensors_missing_gt_50pct": 28,
+  "sensors_missing_none": 52,
+  "sensors_near_constant_95pct_same_value": 126,
+  "split": {
+    "cal": {
+      "end": "2008-09-22 22:15:00",
+      "fails": 9,
+      "n": 235,
+      "start": "2008-09-11 08:58:00"
+    },
+    "fit": {
+      "end": "2008-09-11 08:06:00",
+      "fails": 67,
+      "n": 784,
+      "start": "2008-07-19 11:55:00"
+    },
+    "test": {
+      "end": "2008-10-17 06:07:00",
+      "fails": 28,
+      "n": 548,
+      "start": "2008-09-22 22:17:00"
+    }
+  },
+  "split_fractions": {
+    "cal_end": 0.65,
+    "fit_end": 0.5
+  },
+  "time_first": "2008-07-19 11:55:00",
+  "time_last": "2008-10-17 06:07:00",
+  "time_monotonic_non_decreasing": true
+}

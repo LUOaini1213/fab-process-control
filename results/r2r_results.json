@@ -1,0 +1,823 @@
+{
+  "comparison": {
+    "controllers": [
+      {
+        "controller": "no control",
+        "kind": "none",
+        "mean_offset": 28.14262685,
+        "mean_offset_p2.5": 27.59761338,
+        "mean_offset_p97.5": 28.76423138,
+        "pct_in_spec": 22.83857143,
+        "pct_in_spec_p2.5": 21.14285714,
+        "pct_in_spec_p97.5": 24.85714286,
+        "rmse": 58.16344415,
+        "rmse_p2.5": 57.57625306,
+        "rmse_p97.5": 58.92818063,
+        "std": 50.97353055,
+        "std_p2.5": 50.35523212,
+        "std_p97.5": 51.66269071,
+        "w1": 0.0,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.1",
+        "kind": "ewma",
+        "mean_offset": -4.24287723,
+        "mean_offset_p2.5": -4.336467507,
+        "mean_offset_p97.5": -4.137713268,
+        "pct_in_spec": 99.43857143,
+        "pct_in_spec_p2.5": 98.57142857,
+        "pct_in_spec_p97.5": 100.0,
+        "rmse": 7.500634805,
+        "rmse_p2.5": 7.151824723,
+        "rmse_p97.5": 7.856875443,
+        "std": 6.192523963,
+        "std_p2.5": 5.779627593,
+        "std_p97.5": 6.633847041,
+        "theory_bias": -4.25,
+        "w1": 0.1,
+        "w2": 0.0,
+        "xi_lambda": 0.1176470588
+      },
+      {
+        "controller": "EWMA lambda=0.3",
+        "kind": "ewma",
+        "mean_offset": -1.415550879,
+        "mean_offset_p2.5": -1.470671511,
+        "mean_offset_p97.5": -1.358889995,
+        "pct_in_spec": 99.67857143,
+        "pct_in_spec_p2.5": 99.14285714,
+        "pct_in_spec_p97.5": 100.0,
+        "rmse": 6.759034257,
+        "rmse_p2.5": 6.328367253,
+        "rmse_p97.5": 7.277399088,
+        "std": 6.618316041,
+        "std_p2.5": 6.181112638,
+        "std_p97.5": 7.144089011,
+        "theory_bias": -1.416666667,
+        "w1": 0.3,
+        "w2": 0.0,
+        "xi_lambda": 0.3529411765
+      },
+      {
+        "controller": "EWMA lambda=0.6",
+        "kind": "ewma",
+        "mean_offset": -0.7077920676,
+        "mean_offset_p2.5": -0.7511375984,
+        "mean_offset_p97.5": -0.6632859648,
+        "pct_in_spec": 99.21285714,
+        "pct_in_spec_p2.5": 98.28571429,
+        "pct_in_spec_p97.5": 100.0,
+        "rmse": 7.484773478,
+        "rmse_p2.5": 6.913137294,
+        "rmse_p97.5": 8.100700784,
+        "std": 7.461810818,
+        "std_p2.5": 6.887873838,
+        "std_p97.5": 8.080754375,
+        "theory_bias": -0.7083333333,
+        "w1": 0.6,
+        "w2": 0.0,
+        "xi_lambda": 0.7058823529
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.1",
+        "kind": "dewma",
+        "mean_offset": 0.001108831916,
+        "mean_offset_p2.5": -0.05880757486,
+        "mean_offset_p97.5": 0.05659600529,
+        "pct_in_spec": 99.41142857,
+        "pct_in_spec_p2.5": 98.57142857,
+        "pct_in_spec_p97.5": 100.0,
+        "rmse": 7.271664136,
+        "rmse_p2.5": 6.758741193,
+        "rmse_p97.5": 7.828637509,
+        "std": 7.282016817,
+        "std_p2.5": 6.768298844,
+        "std_p97.5": 7.839793431,
+        "w1": 0.3,
+        "w2": 0.1
+      }
+    ],
+    "setup": {
+      "a0": 0.0,
+      "alpha": 35.0,
+      "b_model": 3.4,
+      "beta": 4.0,
+      "burn_in": 50,
+      "delta": -0.5,
+      "n_rep": 200,
+      "n_runs": 400,
+      "seed0": 1000,
+      "sigma": 6.0,
+      "spec_lsl": 580.0,
+      "spec_usl": 620.0,
+      "target": 600.0
+    }
+  },
+  "stability": {
+    "n_agree": 26,
+    "n_runs": 3000,
+    "n_total": 26,
+    "rows": [
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -5.0,
+        "lambda": 0.085,
+        "theory": "stable",
+        "theory_bias": -5.0,
+        "xi_lambda": 0.1
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -2.5,
+        "lambda": 0.17,
+        "theory": "stable",
+        "theory_bias": -2.5,
+        "xi_lambda": 0.2
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -1.666666667,
+        "lambda": 0.255,
+        "theory": "stable",
+        "theory_bias": -1.666666667,
+        "xi_lambda": 0.3
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -1.25,
+        "lambda": 0.34,
+        "theory": "stable",
+        "theory_bias": -1.25,
+        "xi_lambda": 0.4
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -1.0,
+        "lambda": 0.425,
+        "theory": "stable",
+        "theory_bias": -1.0,
+        "xi_lambda": 0.5
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.8333333333,
+        "lambda": 0.51,
+        "theory": "stable",
+        "theory_bias": -0.8333333333,
+        "xi_lambda": 0.6
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.7142857143,
+        "lambda": 0.595,
+        "theory": "stable",
+        "theory_bias": -0.7142857143,
+        "xi_lambda": 0.7
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.625,
+        "lambda": 0.68,
+        "theory": "stable",
+        "theory_bias": -0.625,
+        "xi_lambda": 0.8
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.5555555556,
+        "lambda": 0.765,
+        "theory": "stable",
+        "theory_bias": -0.5555555556,
+        "xi_lambda": 0.9
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.5,
+        "lambda": 0.85,
+        "theory": "stable",
+        "theory_bias": -0.5,
+        "xi_lambda": 1.0
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.4545454545,
+        "lambda": 0.935,
+        "theory": "stable",
+        "theory_bias": -0.4545454545,
+        "xi_lambda": 1.1
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.4166666667,
+        "lambda": 1.02,
+        "theory": "stable",
+        "theory_bias": -0.4166666667,
+        "xi_lambda": 1.2
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.3846153846,
+        "lambda": 1.105,
+        "theory": "stable",
+        "theory_bias": -0.3846153846,
+        "xi_lambda": 1.3
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.3571428571,
+        "lambda": 1.19,
+        "theory": "stable",
+        "theory_bias": -0.3571428571,
+        "xi_lambda": 1.4
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.3333333333,
+        "lambda": 1.275,
+        "theory": "stable",
+        "theory_bias": -0.3333333333,
+        "xi_lambda": 1.5
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.3125,
+        "lambda": 1.36,
+        "theory": "stable",
+        "theory_bias": -0.3125,
+        "xi_lambda": 1.6
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.2941176471,
+        "lambda": 1.445,
+        "theory": "stable",
+        "theory_bias": -0.2941176471,
+        "xi_lambda": 1.7
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.2777777778,
+        "lambda": 1.53,
+        "theory": "stable",
+        "theory_bias": -0.2777777778,
+        "xi_lambda": 1.8
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.2631578947,
+        "lambda": 1.615,
+        "theory": "stable",
+        "theory_bias": -0.2631578947,
+        "xi_lambda": 1.9
+      },
+      {
+        "agree": true,
+        "empirical": "converged",
+        "final_offset": -0.2564102564,
+        "lambda": 1.6575,
+        "theory": "stable",
+        "theory_bias": -0.2564102564,
+        "xi_lambda": 1.95
+      },
+      {
+        "agree": true,
+        "empirical": "not converged (bounded)",
+        "final_offset": -140.8823529,
+        "lambda": 1.7,
+        "theory": "unstable",
+        "theory_bias": -0.25,
+        "xi_lambda": 2.0
+      },
+      {
+        "agree": true,
+        "empirical": "diverged",
+        "final_offset": null,
+        "lambda": 1.7425,
+        "theory": "unstable",
+        "theory_bias": -0.243902439,
+        "xi_lambda": 2.05
+      },
+      {
+        "agree": true,
+        "empirical": "diverged",
+        "final_offset": null,
+        "lambda": 1.785,
+        "theory": "unstable",
+        "theory_bias": -0.2380952381,
+        "xi_lambda": 2.1
+      },
+      {
+        "agree": true,
+        "empirical": "diverged",
+        "final_offset": null,
+        "lambda": 1.87,
+        "theory": "unstable",
+        "theory_bias": -0.2272727273,
+        "xi_lambda": 2.2
+      },
+      {
+        "agree": true,
+        "empirical": "diverged",
+        "final_offset": null,
+        "lambda": 1.955,
+        "theory": "unstable",
+        "theory_bias": -0.2173913043,
+        "xi_lambda": 2.3
+      },
+      {
+        "agree": true,
+        "empirical": "diverged",
+        "final_offset": null,
+        "lambda": 2.04,
+        "theory": "unstable",
+        "theory_bias": -0.2083333333,
+        "xi_lambda": 2.4
+      }
+    ]
+  },
+  "tuned": {
+    "best": {
+      "dewma": {
+        "controller": "d-EWMA w1=0.15 w2=0.01",
+        "kind": "dewma",
+        "on_grid_edge": false,
+        "rmse_evaluation": 6.397343733,
+        "rmse_evaluation_p2.5": 5.973743406,
+        "rmse_evaluation_p97.5": 6.857618801,
+        "rmse_selection": 6.392591164,
+        "w1": 0.15,
+        "w2": 0.01
+      },
+      "ewma": {
+        "controller": "EWMA lambda=0.25",
+        "kind": "ewma",
+        "on_grid_edge": false,
+        "rmse_evaluation": 6.713099681,
+        "rmse_evaluation_p2.5": 6.296882833,
+        "rmse_evaluation_p97.5": 7.209803081,
+        "rmse_selection": 6.707168979,
+        "w1": 0.25,
+        "w2": 0.0
+      }
+    },
+    "evaluation_seeds": [
+      1000,
+      1199
+    ],
+    "grid": [
+      {
+        "controller": "EWMA lambda=0.05",
+        "kind": "ewma",
+        "rmse_selection": 10.23306071,
+        "w1": 0.05,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.1",
+        "kind": "ewma",
+        "rmse_selection": 7.496947837,
+        "w1": 0.1,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.15",
+        "kind": "ewma",
+        "rmse_selection": 6.887328081,
+        "w1": 0.15,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.2",
+        "kind": "ewma",
+        "rmse_selection": 6.724695105,
+        "w1": 0.2,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.25",
+        "kind": "ewma",
+        "rmse_selection": 6.707168979,
+        "w1": 0.25,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.3",
+        "kind": "ewma",
+        "rmse_selection": 6.752300165,
+        "w1": 0.3,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.35",
+        "kind": "ewma",
+        "rmse_selection": 6.830935686,
+        "w1": 0.35,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.4",
+        "kind": "ewma",
+        "rmse_selection": 6.931001973,
+        "w1": 0.4,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.5",
+        "kind": "ewma",
+        "rmse_selection": 7.176650004,
+        "w1": 0.5,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.6",
+        "kind": "ewma",
+        "rmse_selection": 7.473536842,
+        "w1": 0.6,
+        "w2": 0.0
+      },
+      {
+        "controller": "EWMA lambda=0.8",
+        "kind": "ewma",
+        "rmse_selection": 8.234327825,
+        "w1": 0.8,
+        "w2": 0.0
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 10.28222715,
+        "w1": 0.05,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 7.516765122,
+        "w1": 0.05,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 8.631454239,
+        "w1": 0.05,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 8.346973904,
+        "w1": 0.05,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 9.013191309,
+        "w1": 0.05,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 10.06785233,
+        "w1": 0.05,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.05 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 12.05329244,
+        "w1": 0.05,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 7.265533154,
+        "w1": 0.1,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 6.410987266,
+        "w1": 0.1,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 6.413737355,
+        "w1": 0.1,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 6.540921113,
+        "w1": 0.1,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 6.99915303,
+        "w1": 0.1,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.722226293,
+        "w1": 0.1,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.1 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 9.065272784,
+        "w1": 0.1,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 6.807520427,
+        "w1": 0.15,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 6.49100918,
+        "w1": 0.15,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 6.392591164,
+        "w1": 0.15,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 6.50540603,
+        "w1": 0.15,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 6.834390204,
+        "w1": 0.15,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.364140028,
+        "w1": 0.15,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.15 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 8.384788131,
+        "w1": 0.15,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 6.701564684,
+        "w1": 0.2,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 6.562132118,
+        "w1": 0.2,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 6.484771872,
+        "w1": 0.2,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 6.5594015,
+        "w1": 0.2,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 6.822942547,
+        "w1": 0.2,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.252581278,
+        "w1": 0.2,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.2 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 8.09294562,
+        "w1": 0.2,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 6.758757487,
+        "w1": 0.3,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 6.724515852,
+        "w1": 0.3,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 6.696848084,
+        "w1": 0.3,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 6.736098107,
+        "w1": 0.3,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 6.933662411,
+        "w1": 0.3,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.262150377,
+        "w1": 0.3,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.3 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 7.915587868,
+        "w1": 0.3,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 6.942285119,
+        "w1": 0.4,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 6.935411521,
+        "w1": 0.4,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 6.932119315,
+        "w1": 0.4,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 6.964359683,
+        "w1": 0.4,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 7.128969964,
+        "w1": 0.4,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.409341322,
+        "w1": 0.4,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.4 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 7.973837565,
+        "w1": 0.4,
+        "w2": 0.2
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.002",
+        "kind": "dewma",
+        "rmse_selection": 7.188303686,
+        "w1": 0.5,
+        "w2": 0.002
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.005",
+        "kind": "dewma",
+        "rmse_selection": 7.191326902,
+        "w1": 0.5,
+        "w2": 0.005
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.01",
+        "kind": "dewma",
+        "rmse_selection": 7.199278235,
+        "w1": 0.5,
+        "w2": 0.01
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.02",
+        "kind": "dewma",
+        "rmse_selection": 7.232232044,
+        "w1": 0.5,
+        "w2": 0.02
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.05",
+        "kind": "dewma",
+        "rmse_selection": 7.379630971,
+        "w1": 0.5,
+        "w2": 0.05
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.1",
+        "kind": "dewma",
+        "rmse_selection": 7.635532613,
+        "w1": 0.5,
+        "w2": 0.1
+      },
+      {
+        "controller": "d-EWMA w1=0.5 w2=0.2",
+        "kind": "dewma",
+        "rmse_selection": 8.155938773,
+        "w1": 0.5,
+        "w2": 0.2
+      }
+    ],
+    "n_eval": 200,
+    "n_select": 100,
+    "paired_rmse_diff_dewma_minus_ewma": {
+      "ci95_hi": -0.3106254485,
+      "ci95_lo": -0.3208864457,
+      "frac_reps_dewma_better": 1.0,
+      "mean": -0.3157559471,
+      "se": 0.002617601307
+    },
+    "selection_seeds": [
+      50000,
+      50099
+    ]
+  }
+}

@@ -1,0 +1,827 @@
+{
+  "fold_fractions": [
+    [
+      0.35,
+      0.5,
+      0.65
+    ],
+    [
+      0.5,
+      0.65,
+      0.8
+    ],
+    [
+      0.65,
+      0.8,
+      1.0
+    ]
+  ],
+  "folds": [
+    {
+      "blocks": {
+        "cal": {
+          "end": "2008-09-11 08:06:00",
+          "fails": 6,
+          "n": 236,
+          "start": "2008-08-29 22:45:00"
+        },
+        "fit": {
+          "end": "2008-08-29 22:11:00",
+          "fails": 61,
+          "n": 548,
+          "start": "2008-07-19 11:55:00"
+        },
+        "test": {
+          "end": "2008-09-22 22:15:00",
+          "fails": 9,
+          "n": 235,
+          "start": "2008-09-11 08:58:00"
+        }
+      },
+      "fractions": {
+        "cal_end": 0.5,
+        "fit_end": 0.35,
+        "test_end": 0.65
+      },
+      "gb_chosen": {
+        "learning_rate": 0.1,
+        "max_iter": 200,
+        "max_leaf_nodes": 15
+      },
+      "gb_selection": [
+        {
+          "cal_pr_auc": 0.03146287469,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.02506810124,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.03404270248,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.03012908625,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.02390175638,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.02121171525,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.0284748484,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.03691172059,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        }
+      ],
+      "lr_c": 0.1,
+      "lr_c_selection": [
+        {
+          "C": 1e-06,
+          "cal_pr_auc": 0.07273127617
+        },
+        {
+          "C": 1e-05,
+          "cal_pr_auc": 0.1005928306
+        },
+        {
+          "C": 0.0001,
+          "cal_pr_auc": 0.1013177233
+        },
+        {
+          "C": 0.001,
+          "cal_pr_auc": 0.106271453
+        },
+        {
+          "C": 0.01,
+          "cal_pr_auc": 0.19871874
+        },
+        {
+          "C": 0.1,
+          "cal_pr_auc": 0.2073666091
+        },
+        {
+          "C": 1.0,
+          "cal_pr_auc": 0.1286277135
+        }
+      ],
+      "methods": [
+        {
+          "method": "PCA T2 (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.05827347059,
+            "null_p95": 0.1268278835,
+            "observed": 0.03740341183,
+            "p": 0.8105947026
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5038038348,
+            "null_p95": 0.6612586037,
+            "observed": 0.4508357915,
+            "p": 0.7166416792
+          },
+          "pr_auc": 0.03740341183,
+          "roc_auc": 0.4508357915
+        },
+        {
+          "method": "PCA SPE (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.0580304537,
+            "null_p95": 0.1187630561,
+            "observed": 0.02586191544,
+            "p": 0.9980009995
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5034727139,
+            "null_p95": 0.6642084562,
+            "observed": 0.2241887906,
+            "p": 0.9975012494
+          },
+          "pr_auc": 0.02586191544,
+          "roc_auc": 0.2241887906
+        },
+        {
+          "method": "Count of sensors beyond 3 sigma",
+          "perm_pr_auc": {
+            "null_mean": 0.05706157214,
+            "null_p95": 0.1179164187,
+            "observed": 0.03045990022,
+            "p": 0.9705147426
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5044976647,
+            "null_p95": 0.667932645,
+            "observed": 0.3291543756,
+            "p": 0.9665167416
+          },
+          "pr_auc": 0.03045990022,
+          "roc_auc": 0.3291543756
+        },
+        {
+          "method": "Logistic regression (L2, C chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.05755406945,
+            "null_p95": 0.1237856179,
+            "observed": 0.04076596587,
+            "p": 0.676161919
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4973554572,
+            "null_p95": 0.6597836775,
+            "observed": 0.4764011799,
+            "p": 0.5812093953
+          },
+          "pr_auc": 0.04076596587,
+          "roc_auc": 0.4764011799
+        },
+        {
+          "method": "Gradient boosting (HistGB, chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.05906495652,
+            "null_p95": 0.1378487297,
+            "observed": 0.2238723905,
+            "p": 0.0019990005
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4989857424,
+            "null_p95": 0.6612831858,
+            "observed": 0.6612586037,
+            "p": 0.05147426287
+          },
+          "pr_auc": 0.2238723905,
+          "roc_auc": 0.6612586037
+        },
+        {
+          "method": "Logistic regression (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.05856322056,
+            "null_p95": 0.141235392,
+            "observed": 0.04205233901,
+            "p": 0.6461769115
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4972160767,
+            "null_p95": 0.6592920354,
+            "observed": 0.5113077679,
+            "p": 0.4402798601
+          },
+          "pr_auc": 0.04205233901,
+          "roc_auc": 0.5113077679
+        },
+        {
+          "method": "Gradient boosting (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.05834139511,
+            "null_p95": 0.1331305485,
+            "observed": 0.2994406846,
+            "p": 0.0004997501249
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4995629302,
+            "null_p95": 0.6602753196,
+            "observed": 0.5899705015,
+            "p": 0.171914043
+          },
+          "pr_auc": 0.2994406846,
+          "roc_auc": 0.5899705015
+        }
+      ],
+      "n_sensors_kept": 412,
+      "pca_components": 67,
+      "random_ranking_pr_auc": 0.05900704813
+    },
+    {
+      "blocks": {
+        "cal": {
+          "end": "2008-09-22 22:15:00",
+          "fails": 9,
+          "n": 235,
+          "start": "2008-09-11 08:58:00"
+        },
+        "fit": {
+          "end": "2008-09-11 08:06:00",
+          "fails": 67,
+          "n": 784,
+          "start": "2008-07-19 11:55:00"
+        },
+        "test": {
+          "end": "2008-10-02 20:54:00",
+          "fails": 11,
+          "n": 235,
+          "start": "2008-09-22 22:17:00"
+        }
+      },
+      "fractions": {
+        "cal_end": 0.65,
+        "fit_end": 0.5,
+        "test_end": 0.8
+      },
+      "gb_chosen": {
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 7
+      },
+      "gb_selection": [
+        {
+          "cal_pr_auc": 0.4142389655,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.3896651101,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.323677741,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.3343364614,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.4695510959,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.3847581855,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.2558867229,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.2701175654,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        }
+      ],
+      "lr_c": 0.0001,
+      "lr_c_selection": [
+        {
+          "C": 1e-06,
+          "cal_pr_auc": 0.08925156503
+        },
+        {
+          "C": 1e-05,
+          "cal_pr_auc": 0.09196256621
+        },
+        {
+          "C": 0.0001,
+          "cal_pr_auc": 0.09207280164
+        },
+        {
+          "C": 0.001,
+          "cal_pr_auc": 0.08518837249
+        },
+        {
+          "C": 0.01,
+          "cal_pr_auc": 0.04823589622
+        },
+        {
+          "C": 0.1,
+          "cal_pr_auc": 0.0415665412
+        },
+        {
+          "C": 1.0,
+          "cal_pr_auc": 0.04306775699
+        }
+      ],
+      "methods": [
+        {
+          "method": "PCA T2 (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.06752927526,
+            "null_p95": 0.1409868609,
+            "observed": 0.08980686968,
+            "p": 0.1504247876
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4987698864,
+            "null_p95": 0.6473214286,
+            "observed": 0.5560064935,
+            "p": 0.2583708146
+          },
+          "pr_auc": 0.08980686968,
+          "roc_auc": 0.5560064935
+        },
+        {
+          "method": "PCA SPE (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.06795464657,
+            "null_p95": 0.1440375052,
+            "observed": 0.08039854549,
+            "p": 0.207896052
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4996057224,
+            "null_p95": 0.6546469156,
+            "observed": 0.5880681818,
+            "p": 0.1624187906
+          },
+          "pr_auc": 0.08039854549,
+          "roc_auc": 0.5880681818
+        },
+        {
+          "method": "Count of sensors beyond 3 sigma",
+          "perm_pr_auc": {
+            "null_mean": 0.06478723446,
+            "null_p95": 0.1297870927,
+            "observed": 0.1304182687,
+            "p": 0.05047476262
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.4995121753,
+            "null_p95": 0.6445109578,
+            "observed": 0.6363636364,
+            "p": 0.06446776612
+          },
+          "pr_auc": 0.1304182687,
+          "roc_auc": 0.6363636364
+        },
+        {
+          "method": "Logistic regression (L2, C chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.06763376594,
+            "null_p95": 0.1341772196,
+            "observed": 0.04639580972,
+            "p": 0.7706146927
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5031872971,
+            "null_p95": 0.6456980519,
+            "observed": 0.4699675325,
+            "p": 0.6461769115
+          },
+          "pr_auc": 0.04639580972,
+          "roc_auc": 0.4699675325
+        },
+        {
+          "method": "Gradient boosting (HistGB, chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.06854927791,
+            "null_p95": 0.1416336371,
+            "observed": 0.1348574412,
+            "p": 0.06046976512
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5040777192,
+            "null_p95": 0.6494521104,
+            "observed": 0.6331168831,
+            "p": 0.07346326837
+          },
+          "pr_auc": 0.1348574412,
+          "roc_auc": 0.6331168831
+        },
+        {
+          "method": "Logistic regression (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.06756998262,
+            "null_p95": 0.1329444367,
+            "observed": 0.04637223984,
+            "p": 0.7906046977
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5042751623,
+            "null_p95": 0.6461038961,
+            "observed": 0.4857954545,
+            "p": 0.5887056472
+          },
+          "pr_auc": 0.04637223984,
+          "roc_auc": 0.4857954545
+        },
+        {
+          "method": "Gradient boosting (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.06739827674,
+            "null_p95": 0.1327377842,
+            "observed": 0.05104294218,
+            "p": 0.6541729135
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5043366477,
+            "null_p95": 0.6522321429,
+            "observed": 0.5146103896,
+            "p": 0.4502748626
+          },
+          "pr_auc": 0.05104294218,
+          "roc_auc": 0.5146103896
+        }
+      ],
+      "n_sensors_kept": 408,
+      "pca_components": 73,
+      "random_ranking_pr_auc": 0.06733441938
+    },
+    {
+      "blocks": {
+        "cal": {
+          "end": "2008-10-02 20:54:00",
+          "fails": 11,
+          "n": 235,
+          "start": "2008-09-22 22:17:00"
+        },
+        "fit": {
+          "end": "2008-09-22 22:15:00",
+          "fails": 76,
+          "n": 1019,
+          "start": "2008-07-19 11:55:00"
+        },
+        "test": {
+          "end": "2008-10-17 06:07:00",
+          "fails": 17,
+          "n": 313,
+          "start": "2008-10-02 21:32:00"
+        }
+      },
+      "fractions": {
+        "cal_end": 0.8,
+        "fit_end": 0.65,
+        "test_end": 1.0
+      },
+      "gb_chosen": {
+        "learning_rate": 0.1,
+        "max_iter": 100,
+        "max_leaf_nodes": 15
+      },
+      "gb_selection": [
+        {
+          "cal_pr_auc": 0.06166724707,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.05428651687,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.08218794286,
+          "learning_rate": 0.05,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.07729982792,
+          "learning_rate": 0.05,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.05104294218,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.04877149771,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 7
+        },
+        {
+          "cal_pr_auc": 0.08618588573,
+          "learning_rate": 0.1,
+          "max_iter": 100,
+          "max_leaf_nodes": 15
+        },
+        {
+          "cal_pr_auc": 0.0749378178,
+          "learning_rate": 0.1,
+          "max_iter": 200,
+          "max_leaf_nodes": 15
+        }
+      ],
+      "lr_c": 1e-06,
+      "lr_c_selection": [
+        {
+          "C": 1e-06,
+          "cal_pr_auc": 0.0471361796
+        },
+        {
+          "C": 1e-05,
+          "cal_pr_auc": 0.04710374078
+        },
+        {
+          "C": 0.0001,
+          "cal_pr_auc": 0.04629417889
+        },
+        {
+          "C": 0.001,
+          "cal_pr_auc": 0.04392095308
+        },
+        {
+          "C": 0.01,
+          "cal_pr_auc": 0.04477144779
+        },
+        {
+          "C": 0.1,
+          "cal_pr_auc": 0.04619284382
+        },
+        {
+          "C": 1.0,
+          "cal_pr_auc": 0.04303328321
+        }
+      ],
+      "methods": [
+        {
+          "method": "PCA T2 (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.07113370476,
+            "null_p95": 0.1240808894,
+            "observed": 0.05294749502,
+            "p": 0.7866066967
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5016321542,
+            "null_p95": 0.6186406995,
+            "observed": 0.4660174881,
+            "p": 0.6886556722
+          },
+          "pr_auc": 0.05294749502,
+          "roc_auc": 0.4660174881
+        },
+        {
+          "method": "PCA SPE (80% var)",
+          "perm_pr_auc": {
+            "null_mean": 0.07139504189,
+            "null_p95": 0.1238852082,
+            "observed": 0.0541592301,
+            "p": 0.7486256872
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.500606717,
+            "null_p95": 0.6200814785,
+            "observed": 0.4835055644,
+            "p": 0.5797101449
+          },
+          "pr_auc": 0.0541592301,
+          "roc_auc": 0.4835055644
+        },
+        {
+          "method": "Count of sensors beyond 3 sigma",
+          "perm_pr_auc": {
+            "null_mean": 0.0694529918,
+            "null_p95": 0.1199220515,
+            "observed": 0.05012135232,
+            "p": 0.852073963
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5017630664,
+            "null_p95": 0.6212589428,
+            "observed": 0.4614467409,
+            "p": 0.7141429285
+          },
+          "pr_auc": 0.05012135232,
+          "roc_auc": 0.4614467409
+        },
+        {
+          "method": "Logistic regression (L2, C chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.07160714879,
+            "null_p95": 0.1268248752,
+            "observed": 0.07827572537,
+            "p": 0.2683658171
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5028586049,
+            "null_p95": 0.6262023052,
+            "observed": 0.6452702703,
+            "p": 0.02498750625
+          },
+          "pr_auc": 0.07827572537,
+          "roc_auc": 0.6452702703
+        },
+        {
+          "method": "Gradient boosting (HistGB, chosen on cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.07054628946,
+            "null_p95": 0.1209962363,
+            "observed": 0.072564859,
+            "p": 0.3308345827
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5012937202,
+            "null_p95": 0.6200814785,
+            "observed": 0.6271860095,
+            "p": 0.04247876062
+          },
+          "pr_auc": 0.072564859,
+          "roc_auc": 0.6271860095
+        },
+        {
+          "method": "Logistic regression (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.07154869339,
+            "null_p95": 0.1253382163,
+            "observed": 0.1000466569,
+            "p": 0.1149425287
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5033715223,
+            "null_p95": 0.6252484102,
+            "observed": 0.6983306836,
+            "p": 0.003998001
+          },
+          "pr_auc": 0.1000466569,
+          "roc_auc": 0.6983306836
+        },
+        {
+          "method": "Gradient boosting (refit on fit + cal)",
+          "perm_pr_auc": {
+            "null_mean": 0.07094786556,
+            "null_p95": 0.1213870299,
+            "observed": 0.07094402424,
+            "p": 0.3728135932
+          },
+          "perm_roc_auc": {
+            "null_mean": 0.5014776431,
+            "null_p95": 0.6212539746,
+            "observed": 0.5602146264,
+            "p": 0.2233883058
+          },
+          "pr_auc": 0.07094402424,
+          "roc_auc": 0.5602146264
+        }
+      ],
+      "n_sensors_kept": 412,
+      "pca_components": 76,
+      "random_ranking_pr_auc": 0.07045347519
+    }
+  ],
+  "n_perm": 2000,
+  "perm_seed_base": 11,
+  "pooled": [
+    {
+      "method": "PCA T2 (80% var)",
+      "pr_auc": {
+        "mean_over_folds": 0.06005259218,
+        "null_mean": 0.06564548354,
+        "p": 0.5452273863
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.4909532577,
+        "null_mean": 0.5014019585,
+        "p": 0.5847076462
+      }
+    },
+    {
+      "method": "PCA SPE (80% var)",
+      "pr_auc": {
+        "mean_over_folds": 0.05347323034,
+        "null_mean": 0.06579338072,
+        "p": 0.7381309345
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.4319208456,
+        "null_mean": 0.5012283844,
+        "p": 0.9185407296
+      }
+    },
+    {
+      "method": "Count of sensors beyond 3 sigma",
+      "pr_auc": {
+        "mean_over_folds": 0.07033317375,
+        "null_mean": 0.06376726613,
+        "p": 0.259870065
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.4756549176,
+        "null_mean": 0.5019243021,
+        "p": 0.704147926
+      }
+    },
+    {
+      "method": "Logistic regression (L2, C chosen on cal)",
+      "pr_auc": {
+        "mean_over_folds": 0.05514583365,
+        "null_mean": 0.06559832806,
+        "p": 0.6906546727
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.5305463276,
+        "null_mean": 0.5011337864,
+        "p": 0.2803598201
+      }
+    },
+    {
+      "method": "Gradient boosting (HistGB, chosen on cal)",
+      "pr_auc": {
+        "mean_over_folds": 0.1437648969,
+        "null_mean": 0.06605350796,
+        "p": 0.002498750625
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.6405204988,
+        "null_mean": 0.5014523939,
+        "p": 0.004497751124
+      }
+    },
+    {
+      "method": "Logistic regression (refit on fit + cal)",
+      "pr_auc": {
+        "mean_over_folds": 0.06282374525,
+        "null_mean": 0.06589396552,
+        "p": 0.4832583708
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.5651446354,
+        "null_mean": 0.5016209204,
+        "p": 0.09995002499
+      }
+    },
+    {
+      "method": "Gradient boosting (refit on fit + cal)",
+      "pr_auc": {
+        "mean_over_folds": 0.1404758837,
+        "null_mean": 0.06556251247,
+        "p": 0.00299850075
+      },
+      "roc_auc": {
+        "mean_over_folds": 0.5549318392,
+        "null_mean": 0.501792407,
+        "p": 0.1334332834
+      }
+    }
+  ]
+}

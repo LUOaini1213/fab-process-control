@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-lock.txt
+          pip install --no-deps -e .
+      - name: Tests (SECOM-dependent tests skip without the data)
+        run: pytest -q -rs
+      - name: README and docs tables match results/
+        run: python -m fabpc.cli report --check
+      - name: Mutation-pattern sanity check
+        run: python scripts/mutate.py --check

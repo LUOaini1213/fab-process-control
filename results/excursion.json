@@ -1,0 +1,850 @@
+{
+  "expected_alarms_at_test_rate": 0.9854014599,
+  "fail_rate_alarmed_rows_test": 0.0,
+  "fail_rate_non_alarmed_rows_test": 0.0537428023,
+  "fail_rate_test": 0.05109489051,
+  "fail_rate_window": 0.05,
+  "fails_in_window": 1,
+  "n_alarmed_test": 27,
+  "n_alarms_in_window": 7,
+  "n_reference_rows": 717,
+  "n_spe_alarms": 7,
+  "n_t2_alarms": 6,
+  "scan_statistic": {
+    "n_flags": 27,
+    "n_sim": 20000,
+    "n_windows": 529,
+    "null_mean_max": 3.9012,
+    "null_p95_max": 5.0,
+    "observed_max": 7,
+    "p_value": 0.001999900005,
+    "seed": 5
+  },
+  "sigma_count_threshold": 15.0,
+  "signatures": [
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 8
+        },
+        "fails": 0,
+        "n": 8,
+        "times": [
+          "2008-10-10 10:46:00",
+          "2008-10-10 12:30:00",
+          "2008-10-11 06:56:00",
+          "2008-10-11 07:42:00",
+          "2008-10-11 08:27:00",
+          "2008-10-11 14:43:00",
+          "2008-10-12 01:50:00",
+          "2008-10-12 03:21:00"
+        ]
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 8
+        },
+        "fails": 0,
+        "n": 8,
+        "times": [
+          "2008-10-10 10:46:00",
+          "2008-10-10 12:30:00",
+          "2008-10-11 06:56:00",
+          "2008-10-11 07:42:00",
+          "2008-10-11 08:27:00",
+          "2008-10-11 14:43:00",
+          "2008-10-12 01:50:00",
+          "2008-10-12 03:21:00"
+        ]
+      },
+      "fit_windows_repeated_share_mean": 0.6910526316,
+      "ref_median": 0.1222,
+      "ref_q01": 0.1184,
+      "ref_q99": 0.1269,
+      "ref_zero_frac": 0.0,
+      "sensor": "S007",
+      "test_windows_repeated_share_mean": 0.6694165312,
+      "window_exact_zero": 5,
+      "window_far_outside_ref": 5,
+      "window_max": 0.1238,
+      "window_missing": 0,
+      "window_pos_exact_zero": [
+        5,
+        7,
+        15,
+        18,
+        19
+      ],
+      "window_pos_far_outside_ref": [
+        5,
+        7,
+        15,
+        18,
+        19
+      ],
+      "window_pos_missing": [],
+      "window_repeated_share": 0.7,
+      "window_values": [
+        0.1203,
+        0.1221,
+        0.1206,
+        0.1238,
+        0.1203,
+        0.0,
+        0.1232,
+        0.0,
+        0.1203,
+        0.1207,
+        0.1221,
+        0.1203,
+        0.1234,
+        0.123,
+        0.1203,
+        0.0,
+        0.123,
+        0.1224,
+        0.0,
+        0.0
+      ],
+      "window_values_repeated": 14
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 4
+        },
+        "fails": 0,
+        "n": 4,
+        "times": [
+          "2008-10-05 00:33:00",
+          "2008-10-05 12:03:00",
+          "2008-10-10 10:46:00",
+          "2008-10-11 06:56:00"
+        ]
+      },
+      "fit_windows_repeated_share_mean": 0.6176126591,
+      "ref_median": 0.0784,
+      "ref_q01": 0.019985,
+      "ref_q99": 0.370985,
+      "ref_zero_frac": 0.0,
+      "sensor": "S275",
+      "test_windows_repeated_share_mean": 0.5701822863,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 2,
+      "window_max": 3332.4477,
+      "window_missing": 4,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [
+        5,
+        15
+      ],
+      "window_pos_missing": [
+        7,
+        9,
+        18,
+        19
+      ],
+      "window_repeated_share": 0.5,
+      "window_values": [
+        0.0802,
+        0.0439,
+        0.0619,
+        0.0415,
+        0.134,
+        3331.6752,
+        0.0287,
+        null,
+        0.134,
+        null,
+        0.0439,
+        0.134,
+        0.0422,
+        0.255,
+        0.134,
+        3332.4477,
+        0.255,
+        0.1614,
+        null,
+        null
+      ],
+      "window_values_repeated": 8
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 4
+        },
+        "fails": 0,
+        "n": 4,
+        "times": [
+          "2008-10-05 00:33:00",
+          "2008-10-05 12:03:00",
+          "2008-10-10 10:46:00",
+          "2008-10-11 06:56:00"
+        ]
+      },
+      "fit_windows_repeated_share_mean": 0.6131682147,
+      "ref_median": 0.2324,
+      "ref_q01": 0.057445,
+      "ref_q99": 1.22179,
+      "ref_zero_frac": 0.0,
+      "sensor": "S140",
+      "test_windows_repeated_share_mean": 0.5768383404,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 2,
+      "window_max": 9997.9792,
+      "window_missing": 4,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [
+        5,
+        15
+      ],
+      "window_pos_missing": [
+        7,
+        9,
+        18,
+        19
+      ],
+      "window_repeated_share": 0.5,
+      "window_values": [
+        0.2488,
+        0.1327,
+        0.2001,
+        0.1343,
+        0.392,
+        9997.9106,
+        0.0824,
+        null,
+        0.392,
+        null,
+        0.1327,
+        0.392,
+        0.1387,
+        0.6591,
+        0.392,
+        9997.9792,
+        0.6591,
+        0.4172,
+        null,
+        null
+      ],
+      "window_values_repeated": 8
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 4
+        },
+        "fails": 0,
+        "n": 4,
+        "times": [
+          "2008-10-05 00:33:00",
+          "2008-10-05 12:03:00",
+          "2008-10-10 10:46:00",
+          "2008-10-11 06:56:00"
+        ]
+      },
+      "fit_windows_repeated_share_mean": 0.6131682147,
+      "ref_median": 20.65595,
+      "ref_q01": 5.6797,
+      "ref_q99": 90.153905,
+      "ref_zero_frac": 0.0,
+      "sensor": "S413",
+      "test_windows_repeated_share_mean": 0.5697096965,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 2,
+      "window_max": 898.7167,
+      "window_missing": 4,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [
+        5,
+        15
+      ],
+      "window_pos_missing": [
+        7,
+        9,
+        18,
+        19
+      ],
+      "window_repeated_share": 0.5,
+      "window_values": [
+        14.5714,
+        14.636,
+        13.442,
+        9.3868,
+        32.4564,
+        897.0464,
+        9.3014,
+        null,
+        32.4564,
+        null,
+        14.636,
+        32.4564,
+        9.2047,
+        34.7471,
+        32.4564,
+        898.7167,
+        34.7471,
+        20.5506,
+        null,
+        null
+      ],
+      "window_values_repeated": 8
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "fit_windows_repeated_share_mean": 0.5011627107,
+      "ref_median": 4.6,
+      "ref_q01": 4.52004,
+      "ref_q99": 4.67948,
+      "ref_zero_frac": 0.0,
+      "sensor": "S053",
+      "test_windows_repeated_share_mean": 0.4451795841,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 0,
+      "window_max": 4.633,
+      "window_missing": 0,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [],
+      "window_pos_missing": [],
+      "window_repeated_share": 0.5,
+      "window_values": [
+        3.706,
+        4.605,
+        4.602,
+        4.63,
+        4.601,
+        4.605,
+        4.605,
+        4.569,
+        4.585,
+        4.586,
+        4.63,
+        4.605,
+        4.633,
+        4.605,
+        4.601,
+        4.603,
+        4.601,
+        4.568,
+        4.604,
+        4.598
+      ],
+      "window_values_repeated": 10
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 4
+        },
+        "fails": 0,
+        "n": 4,
+        "times": [
+          "2008-10-05 00:33:00",
+          "2008-10-05 12:03:00",
+          "2008-10-10 10:46:00",
+          "2008-10-11 06:56:00"
+        ]
+      },
+      "fit_windows_repeated_share_mean": 0.6134399725,
+      "ref_median": 1.3101,
+      "ref_q01": 0.72395,
+      "ref_q99": 1.816,
+      "ref_zero_frac": 0.0,
+      "sensor": "S004",
+      "test_windows_repeated_share_mean": 0.5697096965,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 2,
+      "window_max": 1114.5366,
+      "window_missing": 4,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [
+        5,
+        15
+      ],
+      "window_pos_missing": [
+        7,
+        9,
+        18,
+        19
+      ],
+      "window_repeated_share": 0.5,
+      "window_values": [
+        1.7074,
+        0.9065,
+        1.4884,
+        1.4305,
+        1.2079,
+        1114.5366,
+        0.8864,
+        null,
+        1.2079,
+        null,
+        0.9065,
+        1.2079,
+        1.5066,
+        1.897,
+        1.2079,
+        1112.4728,
+        1.897,
+        2.03,
+        null,
+        null
+      ],
+      "window_values_repeated": 8
+    },
+    {
+      "dataset_exact_zero_never_zero_in_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "dataset_far_outside_ref": {
+        "by_block": {
+          "cal": 0,
+          "fit": 0,
+          "test": 0
+        },
+        "fails": 0,
+        "n": 0,
+        "times": []
+      },
+      "fit_windows_repeated_share_mean": 0.7985930513,
+      "ref_median": 73.8657,
+      "ref_q01": 0.0,
+      "ref_q99": 474.0812,
+      "ref_zero_frac": 0.03631284916,
+      "sensor": "S589",
+      "test_windows_repeated_share_mean": 0.7566162571,
+      "window_exact_zero": 0,
+      "window_far_outside_ref": 0,
+      "window_max": 545.6838,
+      "window_missing": 0,
+      "window_pos_exact_zero": [],
+      "window_pos_far_outside_ref": [],
+      "window_pos_missing": [],
+      "window_repeated_share": 0.65,
+      "window_values": [
+        252.0031,
+        67.2425,
+        88.1528,
+        44.0961,
+        44.0961,
+        35.1564,
+        35.1564,
+        35.1564,
+        35.1564,
+        35.1564,
+        176.4448,
+        38.9527,
+        38.9527,
+        57.7031,
+        45.014,
+        545.6838,
+        545.6838,
+        545.6838,
+        545.6838,
+        93.0007
+      ],
+      "window_values_repeated": 13
+    }
+  ],
+  "test_alarm_rate": 0.04927007299,
+  "test_index_start": 422,
+  "time_end": "2008-10-11 08:27:00",
+  "time_start": "2008-10-09 14:15:00",
+  "top_spe_sensors": [
+    {
+      "mean_spe_share": 0.3425689452,
+      "mean_t2_contrib": -32389.79606,
+      "sensor": "S007",
+      "window_mean_z": -16.78637786,
+      "window_missing_frac": 0.0
+    },
+    {
+      "mean_spe_share": 0.07751369294,
+      "mean_t2_contrib": 106792475.2,
+      "sensor": "S275",
+      "window_mean_z": 4574.141545,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.06747055152,
+      "mean_t2_contrib": 102483834.2,
+      "sensor": "S140",
+      "window_mean_z": 4414.480078,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.06446280727,
+      "mean_t2_contrib": 112921.9919,
+      "sensor": "S413",
+      "window_mean_z": 5.103786726,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.03857961074,
+      "mean_t2_contrib": 30.88059442,
+      "sensor": "S053",
+      "window_mean_z": -1.228913657,
+      "window_missing_frac": 0.0
+    }
+  ],
+  "top_t2_sensors": [
+    {
+      "mean_spe_share": 0.07751369294,
+      "mean_t2_contrib": 106792475.2,
+      "sensor": "S275",
+      "window_mean_z": 4574.141545,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.06747055152,
+      "mean_t2_contrib": 102483834.2,
+      "sensor": "S140",
+      "window_mean_z": 4414.480078,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.00531340519,
+      "mean_t2_contrib": 3020632.006,
+      "sensor": "S004",
+      "window_mean_z": 376.438244,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.06446280727,
+      "mean_t2_contrib": 112921.9919,
+      "sensor": "S413",
+      "window_mean_z": 5.103786726,
+      "window_missing_frac": 0.2
+    },
+    {
+      "mean_spe_share": 0.0008041345195,
+      "mean_t2_contrib": 522.4433455,
+      "sensor": "S589",
+      "window_mean_z": 0.6248820367,
+      "window_missing_frac": 0.0
+    }
+  ],
+  "unit_note": "rows are SECOM 'production entities' (secom.names); whether one row is one wafer is not stated",
+  "window_rows": [
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 8,
+      "pos": 0,
+      "spe_over_limit": 1.94923452,
+      "t2_over_limit": 0.6322111348,
+      "time": "2008-10-09 14:15:00",
+      "top_spe_sensor": "S053",
+      "top_spe_share": 0.2686901543
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 2,
+      "pos": 1,
+      "spe_over_limit": 0.3545411816,
+      "t2_over_limit": 0.1419632869,
+      "time": "2008-10-09 15:04:00",
+      "top_spe_sensor": "S118",
+      "top_spe_share": 0.2523790827
+    },
+    {
+      "alarm": false,
+      "fail": 1,
+      "n_missing_kept_sensors": 8,
+      "n_sensors_beyond_3sigma": 5,
+      "pos": 2,
+      "spe_over_limit": 0.3241045455,
+      "t2_over_limit": 0.2060899613,
+      "time": "2008-10-09 15:55:00",
+      "top_spe_sensor": "S487",
+      "top_spe_share": 0.0561546007
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 9,
+      "pos": 3,
+      "spe_over_limit": 0.3876646286,
+      "t2_over_limit": 0.3564903884,
+      "time": "2008-10-09 15:56:00",
+      "top_spe_sensor": "S118",
+      "top_spe_share": 0.2129394851
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 4,
+      "pos": 4,
+      "spe_over_limit": 0.2942494073,
+      "t2_over_limit": 0.1519644584,
+      "time": "2008-10-10 10:05:00",
+      "top_spe_sensor": "S006",
+      "top_spe_share": 0.05757370147
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 17,
+      "pos": 5,
+      "spe_over_limit": 4192442.458,
+      "t2_over_limit": 2287348.781,
+      "time": "2008-10-10 10:46:00",
+      "top_spe_sensor": "S275",
+      "top_spe_share": 0.2660809839
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 1,
+      "pos": 6,
+      "spe_over_limit": 0.2272828696,
+      "t2_over_limit": 0.1312806852,
+      "time": "2008-10-10 10:53:00",
+      "top_spe_sensor": "S117",
+      "top_spe_share": 0.1395220643
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 16,
+      "n_sensors_beyond_3sigma": 4,
+      "pos": 7,
+      "spe_over_limit": 7.775408991,
+      "t2_over_limit": 1.116675413,
+      "time": "2008-10-10 12:30:00",
+      "top_spe_sensor": "S007",
+      "top_spe_share": 0.8001829374
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 4,
+      "pos": 8,
+      "spe_over_limit": 0.3150702721,
+      "t2_over_limit": 0.1534116067,
+      "time": "2008-10-10 15:33:00",
+      "top_spe_sensor": "S485",
+      "top_spe_share": 0.07832237146
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 16,
+      "n_sensors_beyond_3sigma": 0,
+      "pos": 9,
+      "spe_over_limit": 0.215382802,
+      "t2_over_limit": 0.1254592172,
+      "time": "2008-10-10 15:50:00",
+      "top_spe_sensor": "S582",
+      "top_spe_share": 0.08765832105
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 5,
+      "pos": 10,
+      "spe_over_limit": 0.4634106898,
+      "t2_over_limit": 0.3163952832,
+      "time": "2008-10-10 20:02:00",
+      "top_spe_sensor": "S118",
+      "top_spe_share": 0.3815017009
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 7,
+      "pos": 11,
+      "spe_over_limit": 0.341583644,
+      "t2_over_limit": 0.2104511776,
+      "time": "2008-10-10 21:03:00",
+      "top_spe_sensor": "S570",
+      "top_spe_share": 0.08829542513
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 0,
+      "pos": 12,
+      "spe_over_limit": 0.2763046661,
+      "t2_over_limit": 0.1395637186,
+      "time": "2008-10-10 21:07:00",
+      "top_spe_sensor": "S018",
+      "top_spe_share": 0.04712349845
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 13,
+      "pos": 13,
+      "spe_over_limit": 0.4680380984,
+      "t2_over_limit": 0.3665448396,
+      "time": "2008-10-10 21:16:00",
+      "top_spe_sensor": "S570",
+      "top_spe_share": 0.06454879459
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 2,
+      "pos": 14,
+      "spe_over_limit": 0.2825370184,
+      "t2_over_limit": 0.1916816738,
+      "time": "2008-10-11 02:55:00",
+      "top_spe_sensor": "S071",
+      "top_spe_share": 0.08811305582
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 20,
+      "pos": 15,
+      "spe_over_limit": 4194974.331,
+      "t2_over_limit": 2286992.343,
+      "time": "2008-10-11 06:56:00",
+      "top_spe_sensor": "S275",
+      "top_spe_share": 0.2661979638
+    },
+    {
+      "alarm": false,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 3,
+      "pos": 16,
+      "spe_over_limit": 0.3049508251,
+      "t2_over_limit": 0.2087491021,
+      "time": "2008-10-11 07:38:00",
+      "top_spe_sensor": "S571",
+      "top_spe_share": 0.1032496198
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 0,
+      "n_sensors_beyond_3sigma": 40,
+      "pos": 17,
+      "spe_over_limit": 13.1127065,
+      "t2_over_limit": 7.161489379,
+      "time": "2008-10-11 07:39:00",
+      "top_spe_sensor": "S338",
+      "top_spe_share": 0.1729288644
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 16,
+      "n_sensors_beyond_3sigma": 10,
+      "pos": 18,
+      "spe_over_limit": 7.935831138,
+      "t2_over_limit": 1.725237162,
+      "time": "2008-10-11 07:42:00",
+      "top_spe_sensor": "S007",
+      "top_spe_share": 0.77192534
+    },
+    {
+      "alarm": true,
+      "fail": 0,
+      "n_missing_kept_sensors": 16,
+      "n_sensors_beyond_3sigma": 7,
+      "pos": 19,
+      "spe_over_limit": 7.882826858,
+      "t2_over_limit": 1.035728105,
+      "time": "2008-10-11 08:27:00",
+      "top_spe_sensor": "S007",
+      "top_spe_share": 0.8004325933
+    }
+  ],
+  "window_size": 20
+}
