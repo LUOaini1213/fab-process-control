@@ -1,8 +1,22 @@
 # fab-process-control
 
-A personal portfolio project that works through the core toolkit of a
-semiconductor process-control engineer on one public fab dataset and one
-documented simulator:
+[![ci](https://github.com/LUOaini1213/fab-process-control/actions/workflows/ci.yml/badge.svg)](https://github.com/LUOaini1213/fab-process-control/actions/workflows/ci.yml)
+
+A personal portfolio project that works through the core toolkit of a semiconductor process-control engineer on one public fab dataset (UCI SECOM, 1,567 rows x 590 anonymised sensors) and one documented simulator.
+
+**Findings** (generated from `results/*.json`; CI regenerates the SECOM results from the SHA-256-pinned data on every push):
+
+<!-- BEGIN:headline -->
+- **Unsupervised FDC does not predict fails.** All 9 PCA T²/SPE scores rank the 28 test-period fails at chance (smallest permutation p = 0.1084).
+- **A tuned tree ensemble has a small, real ranking skill.** HistGB fold-mean ROC-AUC 0.641 (p = 0.0045) and PR-AUC 0.144 (p = 0.0025) over 3 rolling-origin folds; on the single split its ROC-AUC 0.645 (p = 0.0060) does not survive Bonferroni over 13 methods.
+- **The densest PCA alarm cluster is a data-record fault, not a process excursion** (8D): 7 alarms in 20 rows vs 0.99 expected (scan-statistic p = 0.0020); alarmed test rows failed at 0.0% (27 rows) vs 5.4% for the rest.
+- **Run-to-run control (simulation):** tuned d-EWMA beats tuned EWMA on mean RMSE (6.40 vs 6.71 nm) and has the lower RMSE in 100% of 200 evaluation replications.
+- **CUSUM check (simulation):** 5 of 6 NIST ARL entries reproduced within 3 SE; exception: h = 5 at a 0.5-sigma shift: 37.6 vs NIST 30.0.
+<!-- END:headline -->
+
+**Main limits:** SECOM sensors are anonymous and have no specification limits or controllable inputs, so DOE and run-to-run control are done on a simulator and labelled as simulation; no SECOM result here is good enough to act on a single row.
+
+What is here:
 
 | Area | What is here | Data |
 |---|---|---|
@@ -37,7 +51,7 @@ python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activ
 pip install -r requirements-lock.txt && pip install --no-deps -e .
 python scripts/fetch_secom.py --dest data/secom    # downloads from UCI, checks SHA-256
 export SECOM_DIR=data/secom                        # PowerShell: $env:SECOM_DIR = "data/secom"
-python -m fabpc.cli all                            # results/*.json, results/figures/*.png, README tables (about 10-20 min, mostly the gradient-boosting grids)
+python -m fabpc.cli all                            # results/*.json, results/figures/*.png, README tables (about 2 min on an idle 8-core laptop CPU, about 11 min on a busy one)
 pytest -q                                          # SECOM tests skip cleanly without the data
 ```
 

@@ -64,3 +64,21 @@ def test_secom_results_reproduce_byte_for_byte(tmp_path):
     assert cli.cmd_secom(results=tmp_path, figures=False) == 0
     for name in ("data_profile.json", "spc_summary.json", "fdc_results.json", "excursion.json", "fdc_rolling.json"):
         assert (tmp_path / name).read_bytes() == (RESULTS / name).read_bytes(), name
+
+
+def test_readme_has_every_generated_block_once():
+    """report --check only compares blocks that exist; deleting a marker must fail here."""
+    text = (ROOT / "README.md").read_text(encoding="utf-8")
+    for name in [k for k in report.BLOCKS if k != "fmea_full"] + ["headline"]:
+        assert text.count(f"<!-- BEGIN:{name} -->") == 1, name
+        assert text.count(f"<!-- END:{name} -->") == 1, name
+    # the findings block is on the first screen, above the method table
+    assert text.index("<!-- BEGIN:headline -->") < text.index("| Area | What is here | Data |")
+
+
+def test_fetch_script_pins_match_loader_pins():
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("fetch_secom", ROOT / "scripts" / "fetch_secom.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    assert mod.SHA256 == secom.SHA256

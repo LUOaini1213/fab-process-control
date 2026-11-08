@@ -10,6 +10,7 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -20,7 +21,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-lock.txt
           pip install --no-deps -e .
-      - name: Tests (SECOM-dependent tests skip without the data)
+      - name: Cache SECOM data (keyed on the SHA-256 pins)
+        id: secom-cache
+        uses: actions/cache@v4
+        with:
+          path: data/secom
+          key: secom-${{ hashFiles('scripts/fetch_secom.py', 'src/fabpc/secom.py') }}
+      - name: Fetch SECOM from UCI (checks SHA-256)
+        if: steps.secom-cache.outputs.cache-hit != 'true'
+        run: python scripts/fetch_secom.py --dest data/secom
+      - name: Tests on the real data (any skipped test fails the run)
+        env:
+          SECOM_DIR: data/secom
+          FABPC_REQUIRE_SECOM: "1"
         run: pytest -q -rs
       - name: README and docs tables match results/
         run: python -m fabpc.cli report --check
